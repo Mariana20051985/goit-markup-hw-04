@@ -6,6 +6,8 @@
   --background-color: #ffffff;
   --second-background-color: #f5f4fa;
   --background-footer-color: #2f303a;
+  --color-icons:#AFB1B8;
+  
 }
 /* html{     
   box-sizing: border-box;
@@ -154,6 +156,11 @@ img {
 .contact .contact-date:hover,
 .contact .contact-date:focus {
   color: var(--accent-color);
+}
+/* Іконки-контакти */
+.contact-date .icon{
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* кнопка */
@@ -313,6 +320,8 @@ img {
   margin-top: 50px;
 }
 
+/* Наша команда */
+
 .team {
   background-color: var(--second-background-color);
 }
@@ -354,6 +363,38 @@ img {
   margin-top: 10;
   /* margin-bottom: 0; */
 }
+
+/* Іконки */
+.social {
+  display: flex;
+  padding-left: 0px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+    
+}
+
+.social-icon {
+  display: flex;
+  height: 44px;
+  width: 44px;
+  justify-content: center;
+  align-items: center;
+  fill: var(--color-icons);
+}
+
+.social-icon:not(first-child) {
+  margin-right: 10px;
+}
+
+.social-icon:hover {
+  background-color: var(--accent-color);
+  fill: var(--background-color);
+  border-radius: 50%;
+
+
+}
+
 
 /* Секція footer */
 .section-footer {
