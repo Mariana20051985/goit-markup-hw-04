@@ -253,20 +253,17 @@ img {
   text-transform: uppercase;
 }
 .overlay{
-  height: 600px;
-  max-width: 2000px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
-  background-image: 
-  linear-gradient(
-   to right, 
+  max-width: 2000px;
+  height: 600px;
+  background-image: linear-gradient( to right, 
    rgba(47, 48, 58, 0.4),
    rgba(47, 48, 58, 0.4)),
    url("../image/img-hero.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  
 }
 /* Заголовки секцій */
 .section-title {
@@ -320,14 +317,14 @@ img {
   line-height: 1.7;
  }
  /* Іконки-Наші цінності */
-
+ 
  .values-picture {
-   display: flex; 
+  width: 270px;
+  height: 120px;
+  display: flex; 
   justify-content: center;
   align-items: center;
   background-color: var(--second-background-color);
-  width: 270px;
-  height: 120px;
   margin-bottom: 30px;
 
 }
@@ -421,6 +418,37 @@ img {
 
 
 }
+/* Наші клієнти */
+
+  .our-clients-link {
+  width: 170px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: var(--color-icons);
+}
+.our-clients-link:hover,
+.our-clients-link:focus {
+  border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.our-clients-list{
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.our-clients-item:not(first-child) {
+  margin-right: 30px;
+}
+.our-clients-item {
+  margin: 0;
+  padding: 0;
+}
 
 
 /* Секція footer */
@@ -455,11 +483,8 @@ img {
 }
 /* Іконки футера-Приєднюйтесь */
 
-.footer-social-icons {
-  padding: 0%;
-}
 
-.footer-social-title {
+.footer-network-title {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -467,32 +492,34 @@ img {
   margin-bottom: 20px;
 }
 
-.footer-social-icons-item {
+.footer-network-icon-item {
   display: inline-block;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
-.footer-social-icons-item:not(:last-child) {
+.footer-network-icon-item:not(:last-child) {
   margin-right: 10px;
 }
-.footer-social-icons-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.footer-icon {
+  fill: var(--background-color);
+}
+.footer-network-icon-link {
   width: 44px;
   height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-icon {
-  fill: var(--background-color);
-}
-
-.footer-social-icons-link:hover,
-.footer-social-icons-link:focus {
+.footer-network-icon-link:hover,
+.footer-network-icon-link:focus {
   background-color: var(--accent-color);
+}
+.footer-network-icon {
+  padding: 0%;
 }
 
 
